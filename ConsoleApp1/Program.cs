@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp1
+﻿using System.Globalization;
+
+namespace ConsoleApp1
 {
     internal class Program
     {
@@ -13,6 +15,14 @@
             intTwo = Convert.ToInt32(Console.ReadLine());
 
 
+            int sum = Add(intOne, intTwo);
+
+            Console.WriteLine("Sum: " + sum);
+        }
+
+        private static int Add(int a, int b) 
+        {
+            return a + b;
         }
     }
 }
